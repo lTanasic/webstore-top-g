@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    background-color: black;
+}
+
+header {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    background-color: inherit;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+}
+
+li a:hover {
+    text-shadow: 1.5px 1.5px purple;
+}
+
+h1, li, a, button {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;;
+    z-index: 10;
+}
+
+.nav-logo {
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+}
+
+
+li {
+    list-style: none;
+}
+
+button {
+    justify-content: space-between;
+    margin-right: 50px;
+    background-color: gray;
+    border-style: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    color: rgb(240, 30, 255);
+    border: 2px;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+    border-style: solid;
+    animation-name: navbaranimation;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+
+}
+
+@keyframes navbaranimation {
+    0% {border-bottom-width: 0%; border-bottom-color: rgb(255, 255, 255);}
+    25% {border-bottom-width: 50%; border-bottom-color: purple;}
+    100% {border-bottom-width: 100%; border-bottom-color: rgb(255, 255, 255);}
+}
+
+.active-button {
+    color: black;
+    background-color: rgb(240, 30, 255);
+}
+
+
+/* INDEX PAGE*/
+
+.index-row {
+    display: flex;
+    background-color: red;
+    height: 400px;
+    width: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.index-product {
+    display: flex;
+    background-color: green;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+    align-items: flex-end;
+}
+
+.product-text-layout {
+    display: inline-block;
+    height: 80px;
+    width: 300px;
+    background-color: blue;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.product-info {
+    display: flex;
+    background-color: orange;
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    margin-top: 25px;
+}
+
+.product-price {
+    display: block;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: inherit;
+    margin-top: -40px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.product-price p {
+    margin-top: 10px;
+    color: white;
+    font-size: 25px;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 0%;
+
+}
+
+/* INDEX PAGE*/
